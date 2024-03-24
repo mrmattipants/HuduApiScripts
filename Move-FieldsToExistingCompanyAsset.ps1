@@ -53,4 +53,4 @@ $ApFields = @(
 Set-HuduAsset -name $ApCompanyB.name -company_id $CompanyIdB -asset_layout_id $ApCompanyB.asset_layout_id -fields $ApFields -asset_id $ApCompanyB.id
 
 # Delete Company A Asset
-Remove-HuduAsset -Id $ApCompanyA.id -company_id $CompanyIdA
+Remove-HuduAsset -Id $ApCompanyA.id -company_id $CompanyIdA -Confirm:$False
